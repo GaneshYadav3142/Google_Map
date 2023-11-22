@@ -10,7 +10,7 @@ import {
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 // const google = window.google;
 const mapOptions = {
-  mapId: "30624fb202c68fa2",
+  mapId: "",
   center: { lat: 43.661036, lng: -79.391277 },
   zoom: 17,
   disableDefaultUI: true,
@@ -20,7 +20,7 @@ const mapOptions = {
 
 export const  Map1=()=> {
   return (
-    <Wrapper apiKey={"AIzaSyAaJ1p2YJ4_AI_mQboPvgLBzHIRqFpGUwI"}>
+    <Wrapper apiKey={process.env}>
       <MyMap />
     </Wrapper>
   );
